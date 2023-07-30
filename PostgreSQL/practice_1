@@ -1,0 +1,26 @@
+/* Задание: сколько дней после первого приёма на работу, в каждом отделе, сколько работников было нанято с первого дня работы
+*/
+
+/*  в каждом отделе, сколько работников*/
+
+/*
+SELECT department_name, COUNT(employee_id)
+FROM departments, employees
+WHERE departments.department_id = employees.department_id
+GROUP BY department_name
+*/
+
+
+/* сколько работников было нанято с первого дня работы */
+
+/*
+SELECT employee_id, hire_date
+FROM employees
+ORDER BY hire_date ASC
+*/
+
+/*сколько дней после первого приёма на работу*/
+
+/*select distinct age(timestamp'1987-06-17')
+FROM employees
+*/
